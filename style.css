@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+     background: black;
+}
+body html {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    margin: 70px;
+    align-items: center;
+}
+.container {
+  display: grid;
+}
+.content, .overlay {
+  grid-area: 1 / 1;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    color: hsla(19, 100%, 50%, 1);;
+  font-size: 1em;
+    height: 300px;
+    width: 300px;
+    border-radius: 2%;
+   background:  black;
+}
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    font-size: 1em;
+    height: 300px;
+    width: 300px;
+    border-radius: 2%;
+    text-align: center;
+    background: hsla(19, 100%, 50%, 1);
+    transition: all 5s ease-in-out; 
+}
+.overlay:hover {
+ color: transparent;
+transform: rotateY(195deg);
+background: transparent;
+}
+
